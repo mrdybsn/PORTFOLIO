@@ -15,22 +15,28 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --bg-primary: #0a0e27;
-            --bg-secondary: #141937;
-            --bg-card: #1a1f3a;
-            --accent-purple: #a78bfa;
-            --accent-cyan: #22d3ee;
-            --accent-pink: #f472b6;
-            --accent-orange: #fb923c;
-            --text-primary: #f1f5f9;
-            --text-secondary: #cbd5e1;
-            --text-muted: #94a3b8;
+       :root {
+            /* Backgrounds */
+            --bg-primary: #f7f8fa;      /* Off White main background */
+            --bg-secondary: #eef1f5;    /* Soft light gray-blue */
+            --bg-card: #ffffff;        /* Card white */
+
+            /* Accents */
+            --accent-purple: #1f3c88;   /* Navy Blue */
+            --accent-cyan: #2563eb;     /* Royal Blue */
+            --accent-pink: #3b82f6;     /* Bright Royal */
+            --accent-orange: #d4b996;   /* Soft Tan (very subtle use) */
+
+            /* Text */
+            --text-primary: #0f172a;    /* Deep Navy text */
+            --text-secondary: #334155;  /* Muted Navy */
+            --text-muted: #64748b;      /* Cool gray-blue */
         }
+
 
         body {
             font-family: 'DM Sans', sans-serif;
-            background: linear-gradient(135deg, var(--bg-primary) 0%, #0f1729 100%);
+            background: linear-gradient(135deg, #f7f8fa 0%, #eef1f5 100%);
             color: var(--text-primary);
             line-height: 1.6;
             overflow-x: hidden;
@@ -44,7 +50,8 @@
 
         /* Header Styles */
         header {
-            background: rgba(10, 14, 39, 0.8);
+            color: var(--text-primary);
+            background:  rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(10px);
             padding: 20px 0;
             position: sticky;
@@ -56,7 +63,7 @@
 
         header.scrolled {
             padding: 15px 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
         }
 
         nav {
@@ -352,7 +359,7 @@
             width: 100%;
             max-width: 300px;
             height: 150px;
-            background-color: #fff;
+            background-color: #f8f6f2;
             border-radius: 15px;
             display: flex;
             align-items: center;
@@ -962,7 +969,7 @@
         }
 
         .social-link.linkedin:hover { color: #0077b5; border-color: #0077b5; }
-        .social-link.github:hover { color: #333; border-color: #333; }
+        .social-link.github:hover { color: var(--accent-purple); border-color: var(--accent-purple) }
         .social-link.facebook:hover { color: #1877f2; border-color: #1877f2; }
         .social-link.instagram:hover { color: #e4405f; border-color: #e4405f; }
         .social-link.email:hover { color: #ea4335; border-color: #ea4335; }
@@ -1465,7 +1472,7 @@
 
                 <div class="project-card" onclick="openProjectModal('egovph')">
                     <div class="project-image">
-                        <img src="/mnt/user-data/uploads/Screenshot_2026-01-06_100750.png" alt="eGovPH SuperApp">
+                        <img src="/Screenshot 2026-01-06 100750.png" alt="eGovPH SuperApp">
                     </div>
                     <h3>eGovPH SuperApp Presentation</h3>
                     <p class="project-meta">PowerPoint Presentation | Research & Design | 2026</p>
@@ -1481,7 +1488,7 @@
 
                 <div class="project-card" onclick="openProjectModal('cyberbullying')">
                     <div class="project-image">
-                        <img src="/mnt/user-data/uploads/Screenshot_2026-01-06_100943.png" alt="Cyberbullying Reporting">
+                        <img src="/Screenshot 2026-01-06 100943.png" alt="Cyberbullying Reporting">
                     </div>
                     <h3>Cyberbullying Reporting System</h3>
                     <p class="project-meta">PowerPoint Presentation | Collaborative Project | 2026</p>
@@ -1502,28 +1509,54 @@
         <div class="container">
             <h2 class="section-title">Professional Documents</h2>
             <div class="documents-grid">
+                <!-- Chronological Resume -->
                 <div class="document-card">
-                    <h3>Online Résumé</h3>
-                    <p>Complete professional CV showcasing experience, skills, and achievements</p>
-                    <a href="https://docs.google.com/document/d/1UUXGn8_YZoRNVul0tagWoT7ErUm_OABSAdlOOt1xDr0/edit?usp=sharing" class="document-link" target="_blank">View Resume</a>
+                    <h3>Chronological Résumé</h3>
+                    <p>Traditional résumé highlighting work and academic experience in timeline order</p>
+                    <a href="https://drive.google.com/file/d/1qB4QxPwZuM8CdScQ7wdFxbke8hPFcgxN/view?usp=sharing"
+                    class="document-link" target="_blank">
+                        View Résumé
+                    </a>
                 </div>
 
+                <!-- Functional Resume -->
+                <div class="document-card">
+                    <h3>Functional (Skills-Based) Résumé</h3>
+                    <p>Skills-focused résumé emphasizing technical competencies and strengths</p>
+                    <a href="https://drive.google.com/file/d/1dtx1coxKcgdI4Z-3SrRWOAEo5JrgLl9B/view?usp=sharing"
+                    class="document-link" target="_blank">
+                        View Résumé
+                    </a>
+                </div>
+
+                <!-- Combination Resume -->
+                <div class="document-card">
+                    <h3>Combination Résumé</h3>
+                    <p>Balanced résumé combining skills, experience, and education</p>
+                    <a href="https://drive.google.com/file/d/1HzQLj86s8LwFIubS5j7aq4XCkIDAfUNS/view?usp=sharing"
+                    class="document-link" target="_blank">
+                        View Résumé
+                    </a>
+                </div>
+
+                <!-- Solicited Application Letter -->
                 <div class="document-card">
                     <h3>Application Letter (Solicited)</h3>
-                    <p>Professional cover letter for advertised position applications</p>
-                    <a href="https://docs.google.com/document/d/1agSYAk3YW0dSKwQIHne4t1OtyQNiNuBaivmJJNJbQKk/edit?usp=sharing" class="document-link" target="_blank">View Letter</a>
+                    <p>Formal cover letter tailored for advertised job or internship openings</p>
+                    <a href="https://drive.google.com/file/d/1NylXfO569D1LiJlx0eLvz-a6HvT7qw0t/view?usp=sharing"
+                    class="document-link" target="_blank">
+                        View Letter
+                    </a>
                 </div>
 
+                <!-- Unsolicited Application Letter -->
                 <div class="document-card">
                     <h3>Application Letter (Unsolicited)</h3>
-                    <p>Proactive cover letter for general internship inquiries</p>
-                    <a href="https://docs.google.com/document/d/1F6BCMJnTYV8fTwXPL5NVjLWqOPBaQpsyvKAxEzLLS2k/edit?usp=sharing" class="document-link" target="_blank">View Letter</a>
-                </div>
-
-                <div class="document-card">
-                    <h3>LinkedIn Profile</h3>
-                    <p>Connect with me on LinkedIn for professional networking</p>
-                    <a href="https://www.linkedin.com/in/mardybesana" class="document-link" target="_blank">View Profile</a>
+                    <p>Proactive application letter for general internship or employment inquiries</p>
+                    <a href="https://drive.google.com/file/d/1HraXRhbuwq3Uyfw3foX3wdaPGgPlWiV1/view?usp=sharing"
+                    class="document-link" target="_blank">
+                        View Letter
+                    </a>
                 </div>
             </div>
         </div>
@@ -1833,10 +1866,10 @@
                 { type: 'image', src: '/Screenshot 2026-01-06 011100.png' }
             ],
             egovph: [
-                { type: 'image', src: '/mnt/user-data/uploads/Screenshot_2026-01-06_100750.png' }
+                { type: 'image', src: '/Screenshot 2026-01-06 100750.png' }
             ],
             cyberbullying: [
-                { type: 'image', src: '/mnt/user-data/uploads/Screenshot_2026-01-06_100943.png' }
+                { type: 'image', src: '/Screenshot 2026-01-06 100943.png' }
             ]
         };
 
